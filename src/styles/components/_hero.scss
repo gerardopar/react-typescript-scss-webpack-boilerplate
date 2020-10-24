@@ -1,0 +1,13 @@
+.hero{
+    align-items: center;
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+
+    &__text {
+        color: #fff;
+    }
+}
