@@ -30,6 +30,11 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ['babel-loader', 'eslint-loader']
             },
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                loader: 'source-map-loader',
+            },
             { // # styles loader
                 test: /\.scss$/, // tests for a sass file
                 use: [
